@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myimageView: UIImageView!
+    
+    var myImage = UIImage(named: "MultiSmile")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        myimageView.image = myImage
     }
-
-
+    
+    @IBAction func onButtonTap(_ sender: UIButton ) {
+     //   myImage = UIImage(named: "PNGphoto")
+        myimageView.image = UIImage(named: "water1")
+    }
+    
 }
-
